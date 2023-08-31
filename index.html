@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hun">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon64x64.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="app.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="queries.css" />
+
+    <title>Megtanulva &mdash; Jegyzetek bármilyen tárgyhoz!</title>
+  </head>
+  <body class="sticky">
+    <header class="header">
+      <a href="#">
+        <img class="logo-nav" src="img/favicon.png" alt="logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#ere">Eredményeink</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#zpattern">Miért válassz minket?</a>
+          </li>
+          <li><a class="main-nav-link" href="#aj">Ajánló</a></li>
+
+          <li>
+            <a class="main-nav-link cta-btn" href="#cta1"
+              >Dokumentumok kérése</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1>
+              A tanulás<br />
+              lehet élvezetes.
+            </h1>
+            <p class="hero-description">
+              Tanulj velünk a lehető legkönnyebben. <br />
+              Több mint
+              <span class="eot"><strong>1500 dokumentum</strong></span>
+              található meg adatbázisunkban!
+            </p>
+
+            <a class="btn-cta rm" href="#cta1">Dokumentumok kérése</a>
+
+            <a class="btn-cta nem-em" href="#zpattern"
+              >Tudj meg többet &darr;</a
+            >
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="img/hero3.jpg"
+              alt="kislány és anyukája laptopot használja"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="logos hidden" id="ere">
+        <div class="container">
+          <h2>
+            A nálunk tanult diákok <strong> 94%</strong>-a nyert felvételt,
+            valamilyen felsőoktatási intézménybe.
+          </h2>
+          <p class="logo-pa">
+            Az adatbázisunkban megtalálható jegyzetek segítségével nagyban
+            hozzájárolunk a fiatalok továbbtanulási sikerességében.
+          </p>
+          <div class="logo-box">
+            <img src="img/logo/logo1.png" alt="főnix kft." />
+            <img src="img/logo/logo4.png" alt="budai rt." />
+            <img src="img/logo/logo2.png" alt="főnix kft." />
+            <img src="img/logo/logo3.png" alt="főnix kft." />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-z-pattern" id="zpattern">
+        <div class="z-pattern hidden2">
+          <div class="z-img-box">
+            <img
+              class="z-img"
+              src="img/z1.jpg"
+              alt="kislány és anyukája laptopot használja"
+            />
+          </div>
+          <div class="z-text-box">
+            <ion-icon class="zicon1" name="albums-outline"></ion-icon>
+            <h3>Tananyagok felvételihez és érettségihez!</h3>
+            <p class="z-description">
+              Előző évi felvételi feladatlapok és kidolgozott érettségi tételek.
+              Több mint
+              <span class="eot"><strong>1500 dokumentum!</strong></span>
+            </p>
+            <a class="btn-z" href="#cta1"> Dokumentumok kérése &rarr; </a>
+          </div>
+        </div>
+        <div class="z-pattern sec hidden">
+          <div class="z-text-box">
+            <ion-icon class="zicon2" name="download-outline"></ion-icon>
+            <h4>Töltsd le a feladatokat PDF-ként!</h4>
+            <p class="z-description2">
+              A fiókodra <span class="eot"><strong>letöltheted</strong></span> a
+              számodra szükséges anyagot. Ezután megnyithatod őket az internet
+              használata nélkül!
+            </p>
+          </div>
+
+          <div class="z-img-box">
+            <img
+              class="z-img"
+              src="img/z2.jpg"
+              alt="kislány és anyukája laptopot használja"
+            />
+          </div>
+        </div>
+        <div class="z-pattern thr hidden2">
+          <div class="z-img-box">
+            <img
+              class="z-img"
+              src="img/z3.jpg"
+              alt="kislány és anyukája laptopot használja"
+            />
+          </div>
+          <div class="z-text-box">
+            <ion-icon class="zicon3" name="add-outline"></ion-icon>
+            <h5>Adj fel kéréseket!</h5>
+            <p class="z-description3">
+              Ha esetleg valamilyen témában nem találsz dokumentumokat,
+              <span class="eot"><strong>kéréseket adhadsz fel</strong></span>
+              számunkra, mi pedig pótoljuk a hiányzó dokumentumot!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-award hidden" id="aj">
+        <div class="award">
+          <div class="award-img-box">
+            <img class="ok-img" src="img/ok.png" alt="oktatási hivatal logó" />
+          </div>
+          <div class="award-text-box">
+            <blockquote class="quote">
+              <em
+                >,,Ez az oldal lehetővé teszi a magyar fiatalok számára, hogy a
+                fejlődésük szempontjából elengedhetetlen, és minőségi
+                tananyaghoz tudjanak hozzáférést szerezni''.
+              </em>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta hidden4 container-cta" id="cta1">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h6>A tanulás lehet élvezetes.</h6>
+            <p class="cta-description">
+              Iratkozz fel hozzánk, hogy át tudjuk küldeni az anyagokat, amiket
+              szeretnél.
+            </p>
+            <form class="cta-form" name="sign-up">
+              <div>
+                <label for="email">Email-címed:</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="felhasználónév@mail.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="select-which">Típus:</label>
+                <select name="select-which" id="select-which" required>
+                  <option value="">
+                    Válassz milyen típusú dokumentumok érdekelnek!
+                  </option>
+                  <option value="Felvételi">Felvételi</option>
+                  <option value="Érettségi">Érettségi</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="select-what">Tantárgy:</label>
+                <select name="select-what" id="select-what" required>
+                  <option value="">Válassz egy tantárgyat!</option>
+                  <option value="Magyar Irodalom">Magyar Irodalom</option>
+                  <option value="Magyar Nyelvtan">Magyar Nyelvtan</option>
+                  <option value="Történelem">Történelem</option>
+                  <option value="Matematika">Matematika</option>
+                  <option value="Angol">Angol</option>
+                  <option value="Német">Német</option>
+                  <option value="Összes Tantárgy">Összes Tantárgy</option>
+                </select>
+              </div>
+              <button class="btn-cta down">Dokumentumok kérése</button>
+            </form>
+          </div>
+          <div class="cta-img-box">
+            <img
+              class="cta-img"
+              src="img/cta1.png"
+              alt="kislány és anyukája laptopot használja"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="section-footer">
+      <div class="footer container">
+        <div class="footer-logo">
+          <a href="#">
+            <img class="footer-logo" src="img/favicon.png" alt="logo" />
+          </a>
+        </div>
+        <nav class="nav-col">
+          <ul class="footer-block">
+            <li class="footer-titles">Szolgáltatások</li>
+            <li>
+              <a class="footer-link" href="#zpattern"
+                >Miért válassz <br />
+                minket?</a
+              >
+            </li>
+            <li><a class="footer-link" href="#">Rólunk</a></li>
+            <li><a class="footer-link" href="#">Árak</a></li>
+            <li><a class="footer-link" href="#">GY.I.K.</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <ul class="footer-block">
+            <li class="footer-titles">Erőforrások</li>
+            <li><a class="footer-link" href="#cta1">Regisztráció</a></li>
+            <li><a class="footer-link" href="#">Bejelentkezés</a></li>
+            <li>
+              <a class="footer-link" href="#"
+                >Felhasználási <br />
+                Feltételek</a
+              >
+            </li>
+            <li><a class="footer-link" href="#">Adatvédelem</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <ul class="footer-block">
+            <li class="footer-titles">Elérhetőségek</li>
+            <li><a class="footer-link" href="#">Facebook</a></li>
+            <li><a class="footer-link" href="#">Instagram</a></li>
+            <li><a class="footer-link" href="#">Twitter</a></li>
+            <li><a class="footer-link" href="#">Kapcsolat</a></li>
+          </ul>
+        </nav>
+        <div class="footer-des">
+          © Megtanulva <span class="year">2022</span>. Minden jog fenntartva.
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
